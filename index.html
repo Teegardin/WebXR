@@ -15,9 +15,14 @@
   </a-assets>
 
 		<a-marker type="pattern" url="pattern-marker.patt">
-		  <a-entity gltf-model="#scene"></a-entity>
+		  <a-entity gltf-model="scene.gltf"></a-entity>
 		</a-marker>
-		
+		  <a-anchor>
+                <!-- define the content to be displayed on top of the marker -->
+                <a-box color="#2EAFAC"></a-box>
+        </a-anchor>
+        <!-- define a simple camera -->
+        <a-camera-static/>
 <a-entity camera></a-entity>
 </a-scene>
 	
