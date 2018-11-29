@@ -10,8 +10,8 @@
 	
 <body style="margin : 0px; overflow: hidden;">
   <a-scene embedded arjs="sourceType: webcam;">
-	  <a-asset-item id="scene" src="scene.gltf"></a-asset-item>
-      <a-marker type="pattern" url="pattern-marker.patt">
+	  <a-asset-item id="scene" src="/scene.gltf"></a-asset-item>
+      <a-marker preset="hiro"
         <a-entity 
             gltf-model="#scene"
         </a-entity>
